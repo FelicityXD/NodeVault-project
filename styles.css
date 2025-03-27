@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #cb1136, #151618);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Button */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #cb1136, #151618);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg ,#151618 ,#cb1136);
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 250px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Member Description Section */
+.description {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    background: #3c3c3c;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
